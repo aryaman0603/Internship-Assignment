@@ -1,0 +1,38 @@
+/* Kanban Board container */
+.kanban-board {
+  display: flex;
+  justify-content: space-between; /* Spread columns out evenly */
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Kanban Column styles */
+.kanban-column {
+  background-color: #f9fafb;
+  padding: 16px;          /* Add consistent padding around the columns */
+  border-radius: 8px;
+
+  width: auto;            /* Allow flexible width */
+  max-width: 400px;       /* Set a reasonable max width for the column */
+  min-width: 300px;       /* Ensure a minimum width for the column */
+
+  /* Flexbox layout to ensure proper alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* This centers the ticket cards horizontally */
+  gap: 16px;              /* Space between ticket cards */
+
+  width: 100%;             /* Ensure the column fills available space */
+  max-width: 400px;        /* Set max width for consistency */
+}
+
+
+
+
+
+/* Ticket list inside each column */
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;                       /* Adds spacing between the individual tickets */
+}

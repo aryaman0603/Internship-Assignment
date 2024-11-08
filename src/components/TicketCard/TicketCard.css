@@ -1,0 +1,60 @@
+/* Ticket Card styles */
+.ticket-card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  width: 100%;            /* Ensure ticket card takes full width of its parent */
+  max-width: 400px;       /* Set this width to ensure the cards don't exceed a certain size */
+  min-width: 380px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+
+  margin-left: -70px;      /* Center the card horizontally */
+  margin-right: -40px;     /* Center the card horizontally */
+
+  word-wrap: break-word;  /* Ensure text wrapping inside the card */
+  white-space: normal;    /* Allow the text to wrap normally */
+  flex-grow: 1;            /* Ensure the card grows to fill the space */
+
+}
+
+
+/* Header inside each ticket card */
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Priority and label styling */
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.priority-icon {
+  background-color: #f87171;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.label-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #9ca3af;
+  border-radius: 50%;
+  margin-right: 4px;
+}
